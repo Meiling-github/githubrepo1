@@ -2,7 +2,16 @@
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
-
+resources:
+  repositories:
+  - repository: MyGitHubRepo1
+    type: github
+    name: Meiling-github/githubrepo1
+  - repository: MyGitHubRepo2
+    type: github
+    endpoint: githubconnection
+    name: Meiling-github/githubrepo2
+    
 trigger:
 - master
 
